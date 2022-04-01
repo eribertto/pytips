@@ -2,8 +2,11 @@ import PySimpleGUI as sg
 import vlc
 
 
+
+sg.theme("DarkAmber")
+controls = [sg.Button("Play"), sg.Button("Pause"), sg.Button("Stop"), sg.Text("Note: Click Play after choosing the media file")]
 # controls = [sg.Button("Play"), sg.Button("Pause"), sg.Button("Stop")]
-controls = [sg.Button("Play"), sg.Button("Pause"), sg.Button("Stop"), sg.Button("Note: Click Play after choosing the media file")]
+# controls = [sg.Button("Play"), sg.Button("Pause"), sg.Button("Stop"), sg.Button("Note: Click Play after choosing the media file")]
 
 layout = [[sg.FileBrowse(key="-MP3-", enable_events=True)], controls]
 player = None
